@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Everything Korea: Learn Korean</title>
+  <meta name="description" content="Learn Korean free, from Hangul to TOPIK 6, with Korea's travel, history and food in your language." />
+  <meta property="og:title" content="Everything Korea: Learn Korean" />
+  <meta property="og:description" content="Learn Korean free, from Hangul to TOPIK 6." />
+  <meta property="og:image" content="https://lifeanddestinyco.github.io/ek/icon.png" />
+  <link rel="icon" href="icon.png" />
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f2f2f7;
+      --card: #ffffff;
+      --text: #1c1c1e;
+      --sub: #6e6e73;
+      --blue: #0a3d91;
+      --red: #cd2e3a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #000000; --card: #1c1c1e; --text: #f2f2f7; --sub: #98989d; --blue: #4d8dff; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", Roboto, "Noto Sans KR", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      padding: 24px;
+    }
+    main {
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+    }
+    .icon {
+      width: 112px;
+      height: 112px;
+      border-radius: 25px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    }
+    .hello {
+      margin: 22px 0 4px;
+      color: var(--red);
+      font-size: 17px;
+      font-weight: 600;
+    }
+    h1 {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: -0.3px;
+    }
+    .lead {
+      margin: 10px 0 28px;
+      color: var(--sub);
+      font-size: 16px;
+      line-height: 1.45;
+    }
+    .stores {
+      background: var(--card);
+      border-radius: 14px;
+      overflow: hidden;
+      text-align: left;
+    }
+    .stores a {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 18px;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .stores a + a { border-top: 0.5px solid rgba(128, 128, 128, 0.35); }
+    .stores a:active { background: rgba(128, 128, 128, 0.15); }
+    .stores svg { flex: none; width: 28px; height: 28px; }
+    .stores .label { flex: 1; }
+    .stores .label small { display: block; color: var(--sub); font-size: 13px; }
+    .stores .chev { color: var(--sub); font-size: 20px; }
+    .note {
+      margin-top: 18px;
+      color: var(--sub);
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="icon" src="icon.png" alt="Everything Korea app icon" width="112" height="112" />
+    <p class="hello">안녕하세요</p>
+    <h1>Everything Korea</h1>
+    <p class="lead">Learn Korean free, from Hangul to TOPIK 6.<br />Korea's travel, history and food, in your language.</p>
+
+    <nav class="stores">
+      <a id="play" href="https://play.google.com/store/apps/details?id=com.everythingkorea">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34a853" d="M3.6 2.2 13.4 12l-9.8 9.8c-.4-.2-.6-.7-.6-1.2V3.4c0-.5.2-1 .6-1.2z"/><path fill="#fbbc04" d="m16.7 15.3-3.3-3.3 3.3-3.3 3.8 2.2c1 .6 1 1.6 0 2.2z"/><path fill="#ea4335" d="M13.4 12 3.6 21.8c.4.3 1 .3 1.6 0l11.5-6.5z"/><path fill="#4285f4" d="M13.4 12 16.7 8.7 5.2 2.2c-.6-.3-1.2-.3-1.6 0z"/></svg>
+        <span class="label">Google Play<small>Android</small></span>
+        <span class="chev" aria-hidden="true">›</span>
+      </a>
+      <a id="appstore" href="https://apps.apple.com/app/id6747286293">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect width="24" height="24" rx="5.5" fill="#1a8cff"/><path fill="#fff" d="M11.2 6.4c.3-.5 1-.7 1.5-.4.5.3.7 1 .4 1.5l-.6 1L15 13h2.3c.6 0 1.1.5 1.1 1.1s-.5 1.1-1.1 1.1H6.7c-.6 0-1.1-.5-1.1-1.1S6.1 13 6.7 13h2.9l2.6-4.5zm-3.7 10c.3-.5 1-.7 1.5-.4.5.3.7 1 .4 1.5l-.4.7c-.3.5-1 .7-1.5.4-.5-.3-.7-1-.4-1.5zm6.9-4.4 1.3 2.2H13.1zm2.1 3.6 1.1 1.9c.3.5.1 1.2-.4 1.5-.5.3-1.2.1-1.5-.4l-1.1-1.9z"/></svg>
+        <span class="label">App Store<small>iPhone and iPad</small></span>
+        <span class="chev" aria-hidden="true">›</span>
+      </a>
+    </nav>
+
+    <p class="note">Free. No account. No subscription.</p>
+  </main>
+
+  <script>
+    // Phones go straight to their own store; computers see both links.
+    (function () {
+      var ua = navigator.userAgent || "";
+      var ios = /iPhone|iPad|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1);
+      var android = /Android/.test(ua);
+      var target = ios ? document.getElementById("appstore") : android ? document.getElementById("play") : null;
+      if (target) location.replace(target.href);
+    })();
+  </script>
+</body>
+</html>
